@@ -11,17 +11,17 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group{{ $errors->has('client') ? ' has-error' : '' }}">
-                                    <label for="client" class="control-label">Cliente</label>
-                                    {{ Form::text('client', 'Consumidor Final', ['class' => 'form-control underlined', 'placeholder' => 'Cliente', 'id' => 'client']) }}
-                                    <span id="error-client" class="has-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
                                 <div class="form-group{{ $errors->has('nit') ? ' has-error' : '' }}">
                                     <label for="nit" class="control-label">NIT</label>
                                     {{ Form::text('nit', 'CF', ['class' => 'form-control underlined', 'placeholder' => 'NIT', 'id' => 'nit']) }}
                                     <span id="error-nit" class="has-error"></span>
+                                </div>
+                            </div>                            
+                            <div class="col-md-6">
+                                <div class="form-group{{ $errors->has('client') ? ' has-error' : '' }}">
+                                    <label for="client" class="control-label">Cliente</label>
+                                    {{ Form::text('client', 'Consumidor Final', ['class' => 'form-control underlined', 'placeholder' => 'Cliente', 'id' => 'client']) }}
+                                    <span id="error-client" class="has-error"></span>
                                 </div>
                             </div>
                         </div>
