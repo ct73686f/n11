@@ -1,0 +1,14 @@
+
+
+$ git config --global user.name "Carlos T. Lap"
+git config --global user.email ct73686f@gmail.com
+
+
+git add archivo
+git commit -m 'descripcion'
+git remote add origin https://github.com/ct73686f/n11.git
+git push -u origin master
+
+git checkout master
+git log original/master
+git pull

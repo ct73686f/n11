@@ -85,14 +85,16 @@ class QuotationsController extends Controller
             $productTotal        = ($inventory->current - $total);
             $productTotalCurrent = ($inventory->current - $totalCurrent);
 
-            if ($productTotal < 0) {
-                return [
-                    'valid'    => false,
-                    'quantity' => "No hay suficiente producto disponible para completar la cantidad solicitda. Producto disponible: {$productTotalCurrent}"
-                ];
-            } else {
-                return ['valid' => true];
-            }
+           // Se quito esta opcion para poder agregar productos no importando la cantidad 17-10-2018 CT
+          //  if ($productTotal < 0) {
+          //      return [
+          //          'valid'    => false,
+          //          'quantity' => "No hay suficiente producto disponible para completar la cantidad solicitda. Producto disponible: {$productTotalCurrent}"
+          //      ];
+          //  } else {
+          //      return ['valid' => true];
+          //  }
+            return ['valid' => true];
         }
 
         return ['valid' => false, 'quantity' => 'Producto no encontrado'];
