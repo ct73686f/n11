@@ -97,13 +97,14 @@ class MovementsController extends Controller
                 $price    = $product->cost->unit_price;
                 $quantity = $quantities[$index];
 
-                $total = ($price * $quantity);
+                
 
                 if ($outputType == 'E') {
                     //$cost = $costs[$index];
                     $price = $cost;
                 }
-
+                
+                $total = ($price * $quantity);
                 $totalMovement += $total;
 
 
