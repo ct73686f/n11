@@ -9,12 +9,12 @@
             font-size: 12px;
             font-weight: bold;
             margin:0;
-            padding:0;
+            padding:0; 
         }
 
         #page-wrap {
-            width: 190px;
-            margin: 0 10px;
+            width: 700px;
+            margin: 0 50px;
         }
         .center-justified {
             text-align: justify;
@@ -71,11 +71,11 @@
         <tbody>
         <tr>
             <td style="padding: 5px 0 0 0; text-align: center;">
-                Linea 1:<br>Santa Clara<br>Linea 2:<br>3 calle 14-16 Zona 8 Local 20 Mixco, Guatemala<br>Linea 3:<br>Tel.: 2480-9482
+            <br>Novedades 2132<br>Calz. San Juan 14-06, C.C. Montserrat, Kiosko No. 2<br>Tel.: 4801-6094, 4256-8587
             </td>
         </tr>
         <tr>
-            <td style="text-align: center; padding: 20px 0px;">
+              <td style="text-align: center; padding: 20px 0px; font-size: 15px; color: #FF0000;">
                 <strong>Número:</strong> {{ $movement->id }}<br>
                 <strong>Fecha:</strong> {{ $movement->created_at->format('d/m/Y H:i A') }}<br>
             </td>

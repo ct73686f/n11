@@ -5,10 +5,11 @@ git config --global user.email ct73686f@gmail.com
 
 
 git add archivo
-git commit -m 'descripcion'
+git commit -m 'Movements - Correccion valor total documento'
 git remote add origin https://github.com/ct73686f/n11.git
 git push -u origin master
 
 git checkout master
 git log original/master
+git reset --hard HEAD~1
 git pull
