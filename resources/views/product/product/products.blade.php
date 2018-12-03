@@ -63,6 +63,7 @@
                                             <th>@sortablelink('description', 'Descripción')</th>
                                             <th>@sortablelink('image', 'Imagen')</th>
                                             <th>Precio Unitario</th>
+                                            <th>Precio Costo</th>
                                             <th>Proveedor(es)</th>
                                             <th>Categoría(s)</th>
                                             <th>Stock</th>
@@ -78,6 +79,7 @@
                                                 <td><img class="img-thumbnail img-responsive"
                                                          src="uploads/{{ $product->thumbnail }}" alt=""></td>
                                                 <td>{{ $product->cost->unit_price }}</td>
+                                                <td>{{ $product->cost->unit_cost }}</td>
                                                 <td>{{ $product->providers->implode('name', ', ') }}</td>
                                                 <td>{{ $product->categories->implode('description', ', ') }}</td>
                                                 <td>{{ is_null($product->inventory) ? 0 : $product->inventory->current }}</td>
