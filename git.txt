@@ -6,8 +6,15 @@ git config --global user.email ct73686f@gmail.com
 
 git add archivo
 git commit -m 'Movements - Correccion valor total documento'
-git remote add origin https://github.com/ct73686f/n11.git
+git remote add origin https://github.com/ct73686f/Proyecto-Pagina-Web-N2132.git
 git push -u origin master
+
+///////////////BORRAR ARCHIVOS QUE NO SE QUIERE HACER COMIT////////////
+El paso 1 es mostrar lo que se eliminará mediante la -nopción:
+git clean -n
+Paso limpio - cuidado: esto borrará archivos :
+git clean -f
+////////////////
 
 git checkout master
 git log original/master
